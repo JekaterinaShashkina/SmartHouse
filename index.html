@@ -1,18 +1,32 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smart-House</title>
     <link rel="stylesheet" href="style/index.css" />
-    <script defer src="/js/index.js"></script>
+    <!-- <script defer src="index.js"></script> -->
     <link rel="icon" href="img/favicon/favicon-32x32.png">
+    <script src="index.js" defer></script>
   </head>
   <body>
     <header class="header">
       <div class="container header__container">
         <img class="header__logo" src="img/smart-home.png" alt="logo smart-home" width="80" />
+        <button class="header__nav-btn" aria-label="Open menu">
+          <svg
+            width="36"
+            height="36"
+            viewBox="0 0 36 36"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.5 27H31.5V24H4.5V27ZM4.5 19.5H31.5V16.5H4.5V19.5ZM4.5 9V12H31.5V9H4.5Z"
+            />
+          </svg>
+        </button>
         <nav class="header__navigation navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
@@ -66,7 +80,6 @@
           <p class="hero__subtitle">A home equipped with appliances that can be controlled remotely using the device 
             connected to the internet
           </p>
-
           <a class="hero__btn" href="https://en.wikipedia.org/wiki/Smart_House" target="_blank">More...</a>
         </div>
       </section>
@@ -85,9 +98,10 @@
               including when products are turned on, turned off, and controlled. 
               Smart products may be armed with temperature or humidity sensors to automatically 
               turn on or off if certain criteria are met. This line of smart home innovations
-               also extends to air conditioners.
+              also extends to air conditioners.
             </p>
-            <button class="product__btn">Выбрать</button>
+            <a href="https://ehi.eu/heating-technologies/smart-heating-and-smart-home/" class="product__more"></a>
+            <button class="product__btn">Open</button>
           </div>
         </div>
       </section>
@@ -103,7 +117,8 @@
               Like some more traditional products, lights can often set to change based on motion. 
               Smart bulbs can communicate over Wi-Fi and display statistics or metrics to your phone.
             </p>
-            <button class="product__btn">Выбрать</button>
+            <a href="https://www.vesternet.com/en-eu/pages/scenarios-smart-home-lighting-guide" class="product__more"></a>
+            <button class="product__btn">Open</button>
           </div>
         </div>
       </section>
@@ -122,7 +137,8 @@
               Television and speakers now have greater capabilities to be played on command using applications, 
               including being maintained on a schedule or being voice-controllable.
             </p>
-            <button class="product__btn">Выбрать</button>
+            <a href="https://www.smarthomessolutions.net/smart-audio-visual" class="product__more"></a>
+            <button class="product__btn">Open</button>
           </div>
         </div>
       </section>
@@ -142,7 +158,8 @@
               display on certain areas of your property. These videos may allow for video-calling 
               with the individual at your door, including audio capabilities.
             </p>
-            <button class="product__btn">Выбрать</button>
+            <a href="https://www.security.org/home-security-systems/what-is-a-home-security-system/" class="product__more"></a>
+            <button class="product__btn">Open</button>
           </div>
         </div>
       </section>
@@ -162,7 +179,9 @@
               Though not specifically related to one's home, these digital assistants provide a broad 
               range of controlling smart assets, their schedules, and their statuses.
             </p>
-            <button class="product__btn">Выбрать</button>
+            <a href="https://www.asurion.com/connect/tech-tips/top-5-things-to-look-for-in-a-smart-home-hub/" 
+            class="product__more"></a>
+            <button class="product__btn">Open</button>
           </div>
         </div>
       </section>
@@ -195,10 +214,15 @@
             </ul>
           </div>
           <div class="footer__column">
-            <h3 class="footer__title">Адрес магазина:</h3>
-            <p class="footer__description">
-              г.&nbsp;Москва, ул.&nbsp;Трубная 104/3 1&nbsp;этаж
-            </p>
+            <h3 class="footer__title">Sources:</h3>
+            <div class="footer__description">
+            <a href="https://www.investopedia.com/terms/s/smart-home.asp"  target="_blank">
+              Investopedia
+            </a>
+            <a href="https://www.smarthouse.lt/CHto-takoe-Smart-House/" target="_blank">
+              smarthouse.lt
+            </a>
+          </div>
           </div>
           <div class="footer__column">
             <h3 class="footer__title">Contacts:</h3>
@@ -252,5 +276,19 @@
         <p class="footer__copyright">©Smart_House, 2023</p>
       </div>
     </footer>
+    <div class="modal">
+      <div class="modal__block">
+        <div class="modal__container">
+          <h2 class="modal__title"></h2>
+          <p class="modal__description"></p>
+          <a class="modal__btn">More info</a>
+          <button class="modal__close">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M23.75 8.0125L21.9875 6.25L15 13.2375L8.0125 6.25L6.25 8.0125L13.2375 15L6.25 21.9875L8.0125 23.75L15 16.7625L21.9875 23.75L23.75 21.9875L16.7625 15L23.75 8.0125Z" fill="#00654E"></path>
+          </svg>
+          </button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
