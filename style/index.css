@@ -341,9 +341,7 @@ svg {
   display: none;
   position: fixed;
   inset: 0;
-  /* z-index: 999; */
   background-color: rgba(0, 0, 0, 0.8);
-  /* display: flex; */
   cursor: pointer;
   overflow-x: hidden;
   overflow-y: auto;
